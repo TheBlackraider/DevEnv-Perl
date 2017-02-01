@@ -1,5 +1,5 @@
 
-FROM blackraider/devenv:base 
+FROM blackraider/devenv-base 
 
 MAINTAINER blackraider <er.blacky@gmail.com>
 
