@@ -32,7 +32,9 @@ RUN ~/perl5/perlbrew/bin/perlbrew use perl-5.24.0
 RUN mkdir -p /home/developer/projects/perl
 RUN mkdir -p /home/developer/projects/mojolicious
 
-RUN ~/perl5/bin/cpanm Task::Kensho Data::Dumper Data::Dump List::Util List::MoreUtils Scalar::Util File::Spec Path::Class File::Find File::Basename File::Slurp File::Temp File::HomeDir File::Wich File::Copy File::Path
+RUN ~/perl5/bin/cpanm Task::Kensho Data::Dumper Data::Dump List::Util List::MoreUtils Scalar::Util
+RUN ~/perl5/bin/cpanm File::Spec Path::Class File::Find File::Basename File::Slurp File::Temp File::HomeDir File::Wich File::Copy File::Path
+RUN ~/perl5/bin/cpanm Mojolicious
 
 VOLUME /home/developer/projects/perl
 
